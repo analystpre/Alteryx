@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data</Directory>
+          <FileSpec>*.*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\*.*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="246" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>2</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 2 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="LastAccessTime" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LastAccessTime - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ControlParams"><![CDATA[Control Parameter (6)=FullPath
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output8">
+          <RecordInfo>
+            <Field name="OrderDate" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="StockDate" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="OrderNumber" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="ProductKey" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="CustomerKey" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="TerritoryKey" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="OrderLineItem" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+            <Field name="OrderQuantity" size="254" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Sales Data\AdventureWorks Sales Data 2020.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Alteryx Macros\class_InputCSVfile batchmacro.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>class_InputCSVfile batchmacro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="18661f01-c36e-4886-abe0-682635187baf" />
+      <Telemetry>
+        <PreviousWorkflowId value="61191e1a-54cb-4212-bbd3-7e0bc3598abb" />
+        <OriginWorkflowId value="61191e1a-54cb-4212-bbd3-7e0bc3598abb" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

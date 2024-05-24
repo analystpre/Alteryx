@@ -1,0 +1,591 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="126" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>milestones</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="created_at" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="_v" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="_fivetran_deleted" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="Bool" />
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="updated_at" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="_fivetran_synced" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="kind" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="organization_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="quote_identity" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="booking_identity" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="customer_invoice_no" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ticket_status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zendesk_ticket_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zoho_invoice_status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zoho_estimate_invoice_nos" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="container_code" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="flight_number" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="airline_name" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="carrier_code" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSON_Parse" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings>
+        <Position x="198" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"JSON_Name"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">True</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="created_at" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="_v" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="_fivetran_deleted" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="Bool" />
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="updated_at" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="_fivetran_synced" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="kind" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="organization_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="quote_identity" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="booking_identity" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="customer_invoice_no" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ticket_status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zendesk_ticket_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zoho_invoice_status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zoho_estimate_invoice_nos" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="container_code" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="flight_number" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="airline_name" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="carrier_code" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="booking_id" selected="True" />
+            <SelectField field="JSON_Name" selected="True" />
+            <SelectField field="JSON_ValueString" selected="True" />
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Parse" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="426" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>JSON_ValueString</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>date</RootName>
+          <Delimeters value="@" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date1" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date2" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" field="JSON_ValueString" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[JSON_ValueString = ReplaceChar([JSON_ValueString],"T","@")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="318" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([DT])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([DT])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date1" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date2" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field name="DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date1" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date2" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field name="DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="486" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="booking_id" action="GroupBy" rename="booking_id" />
+            <SummarizeField field="DT" action="First" rename="First_DT" />
+            <SummarizeField field="DT" action="Last" rename="Last_DT" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="Summarize: GroupBy - booking_id" type="V_String" />
+            <Field name="First_DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+            <Field name="Last_DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff([Last_DT],[First_DT],&quot;day&quot;)" field="diff" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [diff]=&quot;0&quot; THEN &quot;Booking Cancelled&quot; ELSE [diff] ENDIF" field="diff" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>diff = DateTimeDiff([Last_DT],[First_DT],"day")
+diff = IF [diff]="0" THEN "Booki...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="Summarize: GroupBy - booking_id" type="V_String" />
+            <Field name="First_DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+            <Field name="Last_DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+            <Field name="diff" size="1073741823" source="Formula: IF [diff]=&quot;0&quot; THEN &quot;Booking Cancelled&quot; ELSE [diff] ENDIF" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToDate([date1])" field="DT" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DT = ToDate([date1])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date1" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date2" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field name="DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="402" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="DT" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DT - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="Formula: ReplaceChar([JSON_ValueString],&quot;T&quot;,&quot;@&quot;)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date1" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_ValueString" name="date2" size="1073741823" source="TextToColumns: Parsed from JSON_ValueString" type="V_WString" />
+            <Field name="DT" size="1073741823" source="Formula: ToDate([date1])" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Order Tracking.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="created_at" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="_v" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="_fivetran_deleted" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="Bool" />
+            <Field name="milestones" size="4837" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="booking_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="updated_at" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="_fivetran_synced" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="kind" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="organization_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="quote_identity" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="booking_identity" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="customer_invoice_no" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ticket_status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zendesk_ticket_id" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zoho_invoice_status" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zoho_estimate_invoice_nos" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="container_code" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="flight_number" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="airline_name" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="carrier_code" size="255" source="File: D:\ALteryx\Data-Altryx_Ashish\Data\Order Tracking.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="102" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="78" y="120" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="18" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output26" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="36" Connection="Action" />
+      <Destination ToolID="7" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="35" Connection="Question" />
+      <Destination ToolID="36" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (35)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Class_JasonParse</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="063dd8b2-4a09-4ea0-b682-2efce645d57c" />
+      <Telemetry>
+        <PreviousWorkflowId value="b22d6755-4a3d-40fa-81b5-e1ad1fac93c7" />
+        <OriginWorkflowId value="b22d6755-4a3d-40fa-81b5-e1ad1fac93c7" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="36" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>7/JSON_Field</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (32)</Name>
+          <ToolId value="32" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>enter Jason Field</Description>
+              <Name>Control Parameter (35)</Name>
+              <ToolId value="35" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (35)</Name>
+            <Description>enter Jason Field</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="18" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
