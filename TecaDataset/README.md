@@ -1,4 +1,4 @@
-Analysis of the Teca dataset, which includes customer transactions from over 150 convenience
+Analysis of  Teca dataset, which includes customer transactions from over 150 convenience
 stores. Through exploratory data analysis (EDA) and extract, transform, load (ETL) processes, 
 insights were derived on seasonal sales trends, product success by region, overstocked products, and 
 best-selling stores. These findings inform tactical business strategies such as optimizing stock levels, 
